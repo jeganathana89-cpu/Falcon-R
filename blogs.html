@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog & Insights – Coredox Digital | Digital Marketing Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="blogsstyle.css">
+
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header id="header" class="header">
+  <a href="index.html" class="logo">Coredox Digital<span class="dot">.</span></a>
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html" class="active">Blogs</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <a href="contact us.html" class="header-cta-btn">Enquiry Now</a>
+  <button class="mobile-menu-toggle" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index (1).html"        onclick="closeMenu()">Home</a>
+  <a href="services.html"     onclick="closeMenu()">Services</a>
+  <a href="blog.html" class="active" onclick="closeMenu()">Blogs</a>
+  <a href="contact us.html" onclick="closeMenu()">Contact Us</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="blog-hero">
+  <div class="hero-eyebrow">✦ Knowledge Hub</div>
+  <h1>Insights, Ideas &amp; <span>Digital Growth</span><br>All in One Place</h1>
+  <p>Explore expert articles on digital marketing, web development, automation, design, and the technologies shaping tomorrow's businesses.</p>
+  <nav class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">›</span>
+    <span>Blog &amp; Insights</span>
+  </nav>
+</section>
+
+<!-- ===== CATEGORY FILTER BAR 
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn active" data-filter="all">All Posts</button>
+    <button class="filter-btn" data-filter="seo">SEO</button>
+    <button class="filter-btn" data-filter="social">Social Media</button>
+    <button class="filter-btn" data-filter="dev">Web Development</button>
+    <button class="filter-btn" data-filter="content">Content</button>
+    <button class="filter-btn" data-filter="ads">Paid Ads</button>
+    <button class="filter-btn" data-filter="iot">IoT</button>
+    <button class="filter-btn" data-filter="auto">Automation</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+    <button class="filter-btn" data-filter="ai">AI &amp; Tools</button>
+  </div>
+</div>===== -->
+
+<!-- ===== SEARCH + COUNT ===== -->
+<div class="search-row">
+ <!-- =====  <div class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="Search articles…" id="searchInput">
+  </div> ===== -->
+  <p class="result-count">Showing <strong>9</strong> articles</p>
+</div>
+
+<!-- ===== FEATURED POST ===== -->
+<div class="featured-wrap reveal">
+  <div class="featured-card">
+    <div class="featured-content">
+      <div class="featured-badge">⭐ Featured Article</div>
+      <div class="featured-meta">
+        <span><i class="fa-regular fa-calendar"></i> 10 June, 2026</span>
+        <span><i class="fa-regular fa-clock"></i> 9 min read</span>
+      </div>
+      <h2>The Complete 2026 Digital Marketing Playbook: What Actually Works Right Now</h2>
+      <p>AI-generated content, zero-click searches, and shrinking organic reach — the rules changed again. Here's the framework top brands are using to grow in spite of it all.</p>
+      <a href="#" class="read-btn">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="featured-image">
+      <img src="images/dm.jpg" alt="Digital Marketing 2026">
+    </div>
+  </div>
+</div>
+
+<!-- ===== BLOG GRID ===== -->
+<section class="blog-section">
+  <div class="section-row">
+    <h2>All <span>Articles</span></h2>
+   <!-- ===== <a href="#" class="view-all-link">Subscribe to newsletter <i class="fa-solid fa-arrow-right"></i></a>
+  </div> ===== -->
+
+  <div class="blog-grid" id="blogGrid">
+
+    <!-- Card 1 -->
+    
+    <article class="blog-card reveal">
+      <a href="blog.html">
+      <div class="card-img">
+        <span class="card-cat cat-seo">ADs</span>
+        <img src="images/scmedia.jpg" alt="SEO Trends">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 02 Jun, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 6 min</span>
+        </div>
+        <h3 class="card-title">Google Ads vs Facebook Ads: Which is Better? </h3>
+        <p class="card-excerpt">Both platforms command billions in ad spend each year, yet they serve distinctly different purposes — and understanding that difference is the key to maximising your return on investment.</p>
+      </div>
+      </a>
+    </article> 
+
+    <!-- Card 2 -->
+    <article class="blog-card reveal reveal-d1">
+      <a href="blog1.html">
+      <div class="card-img">
+        <span class="card-cat cat-social">Social Media</span>
+        <img src="images/electronics.jpg" alt="Social Media">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 28 May, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 5 min</span>
+        </div>
+        <h3 class="card-title">Automation Workflows That Save Time </h3>
+        <p class="card-excerpt">Why Automation Is No Longer Optional for Growing Businesses</p>
+      </div>
+      </a>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="blog-card reveal reveal-d2">
+      <a href="blog2.html">
+      <div class="card-img">
+        <span class="card-cat cat-dev">Web Dev</span>
+        <img src="images/web-dev.jpg" alt="Web Development">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 21 May, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 8 min</span>
+        </div>
+        <h3 class="card-title">Best Digital Marketing Strategies in 2026
+        </h3>
+        
+        <p class="card-excerpt">Why Your 2024 Strategy Will Not Work in 2026</p>
+      </div>
+      </a>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="blog-card reveal reveal-d3">
+      <div class="card-img">
+        <span class="card-cat cat-ads">Paid Ads</span>
+        <img src="images/onlinemarketing.jpg" alt="Google Ads vs Meta">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 15 May, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 7 min</span>
+        </div>
+        <h3 class="card-title">Google Ads vs Meta Ads in 2026: Where Should Your Budget Go?</h3>
+        <p class="card-excerpt">Cost-per-click is rising on both platforms. We crunch the data across 50 campaigns to show you where ROAS is actually higher.</p>
+      </div>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="blog-card reveal">
+      <div class="card-img">
+        <span class="card-cat cat-auto">Automation</span>
+        <img src="images/automation.jpg" alt="Automation">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 09 May, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 6 min</span>
+        </div>
+        <h3 class="card-title">10 Make.com Workflows That Will Save Your Team 20 Hours a Week</h3>
+        <p class="card-excerpt">From lead capture to invoice generation — these automation workflows are plug-and-play for any small business.</p>
+      </div>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="blog-card reveal reveal-d1">
+      <div class="card-img">
+        <span class="card-cat cat-content">Content</span>
+        <img src="images/manlap.jpg" alt="Content Marketing">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 03 May, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 5 min</span>
+        </div>
+        <h3 class="card-title">How to Build a Content Moat That Competitors Can't Copy</h3>
+        <p class="card-excerpt">Original research, proprietary data, and expert interviews — the three pillars of content that ranks and converts for years.</p>
+      </div>
+    </article>
+
+    <!-- Card 7 -->
+    <article class="blog-card reveal reveal-d2">
+      <div class="card-img">
+        <span class="card-cat cat-iot">IoT</span>
+        <img src="images/electronics.jpg" alt="IoT">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 27 Apr, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 9 min</span>
+        </div>
+        <h3 class="card-title">IoT in Retail: How Smart Shelves Are Changing Inventory Forever</h3>
+        <p class="card-excerpt">Real-time stock sensing, automated reordering, and shopper heatmaps — the retail IoT revolution is here and surprisingly affordable.</p>
+      </div>
+    </article>
+
+    <!-- Card 8 -->
+    <article class="blog-card reveal reveal-d3">
+      <div class="card-img">
+        <span class="card-cat cat-design">Design</span>
+        <img src="images/app-iot.jpg" alt="UI Design">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 20 Apr, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 5 min</span>
+        </div>
+        <h3 class="card-title">The 7 UI Mistakes Killing Your Conversion Rate (And How to Fix Them)</h3>
+        <p class="card-excerpt">Tiny design decisions — button placement, contrast, microcopy — have outsized effects on whether visitors buy or bounce.</p>
+      </div>
+    </article>
+
+    <!-- Card 9
+    <article class="blog-card reveal">
+      <div class="card-img">
+        <span class="card-cat cat-ai">AI & Tools</span>
+        <img src="images/electronics.jpg" alt="AI Tools">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 14 Apr, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 7 min</span>
+        </div>
+        <h3 class="card-title">AI Content Tools in 2026: Which Ones Are Worth Paying For?</h3>
+        <p class="card-excerpt">We tested 14 AI writing and image tools over 3 months. Here's an honest breakdown of output quality, cost, and real-world use cases.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=9" alt="Vikram Bose">
+            <span class="author-name">Vikram Bose</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 10 -->
+    <!--<article class="blog-card reveal reveal-d1">
+      <div class="card-img">
+        <span class="card-cat cat-brand">Branding</span>
+        <img src="https://images.unsplash.com/photo-1493421419110-74f4e85ba126?w=600&auto=format&fit=crop&q=75" alt="Brand Identity">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 07 Apr, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 6 min</span>
+        </div>
+        <h3 class="card-title">Building a Brand Identity That Outlasts Trends: A Founder's Guide</h3>
+        <p class="card-excerpt">Logo, palette, tone of voice — the elements brands get wrong and the frameworks that help you get it right from day one.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=10" alt="Sonal Kapoor">
+            <span class="author-name">Sonal Kapoor</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 11 -->
+    <!--<article class="blog-card reveal reveal-d2">
+      <div class="card-img">
+        <span class="card-cat cat-seo">SEO</span>
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop&q=75" alt="Local SEO">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 01 Apr, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 5 min</span>
+        </div>
+        <h3 class="card-title">Local SEO in 2026: The Complete Checklist for Small Businesses</h3>
+        <p class="card-excerpt">Google Business Profile, local citations, review velocity — the local SEO levers that drive foot traffic and calls right now.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=12" alt="Riya Shah">
+            <span class="author-name">Riya Shah</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 12 -->
+    <!--<article class="blog-card reveal reveal-d3">
+      <div class="card-img">
+        <span class="card-cat cat-auto">Automation</span>
+        <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&auto=format&fit=crop&q=75" alt="CRM Automation">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 25 Mar, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 6 min</span>
+        </div>
+        <h3 class="card-title">How to Automate Your Entire Lead Nurture Sequence with HubSpot + N8N</h3>
+        <p class="card-excerpt">A step-by-step guide to building a zero-touch lead pipeline that qualifies, scores, and follows up — automatically.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=15" alt="Kiran Joshi">
+            <span class="author-name">Kiran Joshi</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 13 -->
+    <!--<article class="blog-card reveal">
+      <div class="card-img">
+        <span class="card-cat cat-dev">Web Dev</span>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=75" alt="Core Web Vitals">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 18 Mar, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 8 min</span>
+        </div>
+        <h3 class="card-title">Core Web Vitals 2026: The Developer's Fix-It Guide for Perfect Scores</h3>
+        <p class="card-excerpt">LCP, INP, CLS — Google's ranking signals are harder to nail than ever. These specific code changes move the needle most.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=18" alt="Dev Patel">
+            <span class="author-name">Dev Patel</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 14 -->
+    <!--<article class="blog-card reveal reveal-d1">
+      <div class="card-img">
+        <span class="card-cat cat-social">Social Media</span>
+        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&auto=format&fit=crop&q=75" alt="LinkedIn">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 11 Mar, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 5 min</span>
+        </div>
+        <h3 class="card-title">LinkedIn Organic Growth in 2026: The Algorithm Has Changed — Here's What Works</h3>
+        <p class="card-excerpt">Thought leadership, carousels, and comments — we analysed 200 top-performing posts to find what LinkedIn is actually rewarding right now.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=20" alt="Arjun Mehta">
+            <span class="author-name">Arjun Mehta</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 15 -->
+    <!--<article class="blog-card reveal reveal-d2">
+      <div class="card-img">
+        <span class="card-cat cat-design">Design</span>
+        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&auto=format&fit=crop&q=75" alt="Motion Design">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 05 Mar, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 5 min</span>
+        </div>
+        <h3 class="card-title">Motion Design on a Budget: Free After Effects Techniques That Look Premium</h3>
+        <p class="card-excerpt">You don't need a motion studio. These six After Effects techniques produce broadcast-quality animations — and they're free to apply.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=25" alt="Ananya Roy">
+            <span class="author-name">Ananya Roy</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 16 -->
+    <!--<article class="blog-card reveal reveal-d3">
+      <div class="card-img">
+        <span class="card-cat cat-content">Content</span>
+        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b6f7e?w=600&auto=format&fit=crop&q=75" alt="Email Marketing">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 27 Feb, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 6 min</span>
+        </div>
+        <h3 class="card-title">Email Marketing Is Not Dead — It's Your Highest-ROI Channel if You Do This</h3>
+        <p class="card-excerpt">Segmentation, send-time optimisation, and plain-text sequences — the counterintuitive tactics that triple open rates.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=30" alt="Neha Gupta">
+            <span class="author-name">Neha Gupta</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 17 -->
+    <!--<article class="blog-card reveal">
+      <div class="card-img">
+        <span class="card-cat cat-iot">IoT</span>
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=75" alt="Industrial IoT">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 20 Feb, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 10 min</span>
+        </div>
+        <h3 class="card-title">Predictive Maintenance with IIoT: Cutting Downtime by 40% in Manufacturing</h3>
+        <p class="card-excerpt">How mid-sized manufacturers are using edge sensors and ML models to predict equipment failure before it happens — and the ROI they're seeing.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=35" alt="Rahul Sharma">
+            <span class="author-name">Rahul Sharma</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 18 -->
+    <!--<article class="blog-card reveal reveal-d1">
+      <div class="card-img">
+        <span class="card-cat cat-ai">AI & Tools</span>
+        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=75" alt="AI in Marketing">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 13 Feb, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 7 min</span>
+        </div>
+        <h3 class="card-title">AI Personalisation at Scale: How E-commerce Brands Are 3× Their Revenue</h3>
+        <p class="card-excerpt">Dynamic product recommendations, AI-driven email personalisation, and real-time site adaptation — practical examples from real brands.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=40" alt="Vikram Bose">
+            <span class="author-name">Vikram Bose</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 19 -->
+    <!-- <article class="blog-card reveal reveal-d2">
+      <div class="card-img">
+        <span class="card-cat cat-ads">Paid Ads</span>
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=75" alt="Performance Max">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 06 Feb, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 8 min</span>
+        </div>
+        <h3 class="card-title">Performance Max Campaigns: The Setup That Actually Works (With Real Numbers)</h3>
+        <p class="card-excerpt">Google's PMax is powerful but opaque. Here's the exact account structure, asset groups, and audience signals delivering the best results.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=45" alt="Priya Nair">
+            <span class="author-name">Priya Nair</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 20 -->
+    <!-- <article class="blog-card reveal reveal-d3">
+      <div class="card-img">
+        <span class="card-cat cat-brand">Branding</span>
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop&q=75" alt="Startup Branding">
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span><i class="fa-regular fa-calendar"></i> 30 Jan, 2026</span>
+          <span class="dot-sep"></span>
+          <span><i class="fa-regular fa-clock"></i> 6 min</span>
+        </div>
+        <h3 class="card-title">From Idea to Identity: How Startups Can Build a Brand in 30 Days</h3>
+        <p class="card-excerpt">A sprint-based branding process used by over 40 early-stage startups — covering naming, visual identity, and brand voice in one tight timeline.</p>
+        <div class="card-footer">
+          <div class="card-author">
+            <img class="author-avatar" src="https://i.pravatar.cc/50?img=50" alt="Sonal Kapoor">
+            <span class="author-name">Sonal Kapoor</span>
+          </div>
+          <a href="#" class="card-read-link">Read <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article> -->
+
+  </div><!-- /blog-grid -->
+</section>
+
+<!-- ===== PAGINATION 
+<div class="pagination">
+  <button class="pg-btn arrow"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="pg-btn active">1</button>
+  <button class="pg-btn">2</button>
+  <button class="pg-btn">3</button>
+  <button class="pg-btn">4</button>
+  <button class="pg-btn arrow"><i class="fa-solid fa-chevron-right"></i></button>
+</div>===== -->
+
+<!-- ===== NEWSLETTER STRIP ===== -->
+<div class="nl-strip">
+  <h2>Never Miss an Insight</h2>
+  <p>Get our best articles on digital marketing, development, and growth delivered to your inbox every Tuesday.</p>
+  <form class="nl-form" onsubmit="return false;">
+    <input type="email" placeholder="Your email address">
+    <button type="submit">Subscribe Free</button>
+  </form>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand footer-col">
+      <a href="index(1).html" class="footer-logo">Coredox Digital<span class="dot">.</span></a>
+      <p>We are a digital marketing agency that helps businesses grow and succeed online.</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="service.html">Our Services</a></li>
+        <li><a href="blogs.html">Our Blogs</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Recent Posts</h4>
+      <div class="footer-post">
+        <div class="post-img"><img src="images/electronics.jpg" alt="Tech post"/></div>
+        <div><div class="post-date">10 Jun, 2026</div><div class="post-title">Why Automation Is No Longer Optional for Growing Businesses</div></div>
+      </div>
+      <div class="footer-post">
+        <div class="post-img"><img src="images/top-view-cloud-with-word-seo.jpg" alt="Dev post"/></div>
+        <div><div class="post-date">21 May, 2026</div><div class="post-title">Why Your 2024 Strategy Will Not Work in 2026</div></div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i> info@coredoxdigital.com</div>
+      <div class="contact-item"><i class="fa-solid fa-phone"></i> +91 9025063242</div>
+      <form class="email-form" onsubmit="return false;">
+        <input type="email" placeholder="Your Email Address"/>
+        <button type="submit">→</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© All Copyright 2026 by Coredox Digital</span>
+    <a href="#" class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑</a>
+  </div>
+</footer>
+
+<script src="blogs.js"> </script>
+</body>
+</html>
